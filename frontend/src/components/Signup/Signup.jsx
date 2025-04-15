@@ -1,47 +1,36 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import './signup.css'
+import React from "react";
+import { Link } from "react-router-dom";
+
 const Signup = () => {
   return (
-    <div className='addUser'>
-      <h3>Sign Up</h3>
-      <form action="" className='addUserForm'>
-        <div className="inputGroup">
-          <label htmlFor="username">Name:</label>
-          <input 
-          type="text" 
-          id='username' 
-          placeholder='Enter your Username' 
-          autoComplete='off'
-          />
-          <label htmlFor="useremail">Email:</label>
-          <input 
-          type="email" 
-          id='useremail' 
-          placeholder='Enter your Email' 
-          autoComplete='off'
-          />
-          <label htmlFor="userpassword">Passwod:</label>
-          <input 
-          type="password" 
-          id='useremail' 
-          placeholder='Enter your Password' 
-          autoComplete='off'
-          />
-          <button type="button" class="btn btn-success">SignUp</button>
+    <div className="container d-flex justify-content-center align-items-center vh-100">
+      <div className="card p-4 shadow w-100" style={{ maxWidth: "400px" }}>
+        <h3 className="text-center text-uppercase text-success fw-bold">Signup</h3>
+        <form>
+          <div className="mb-3">
+            <label htmlFor="username" className="form-label">Username</label>
+            <input type="text" className="form-control" id="username" placeholder="Enter username" autoComplete="off" />
+          </div>
+          <div className="mb-3">
+            <label htmlFor="email" className="form-label">Email address</label>
+            <input type="email" className="form-control" id="email" placeholder="Enter email" autoComplete="off" />
+          </div>
+          <div className="mb-3">
+            <label htmlFor="password" className="form-label">Password</label>
+            <input type="password" className="form-control" id="password" placeholder="Password" autoComplete="off" />
+          </div>
+          <div className="mb-3">
+            <label htmlFor="mobile" className="form-label">Mobile No.</label>
+            <input type="text" className="form-control" id="mobile" placeholder="Enter mobile number" autoComplete="off" />
+          </div>
+          <button type="submit" className="btn btn-success w-100">Signup</button>
+        </form>
+        <div className="text-center mt-3">
+          <p>Already a user? <Link to="/login">Login</Link></p>
         </div>
-      </form>
-      <div className="login">
-        <p>Already have an account?</p>
-        <Link to="/Login" type="submit" class="btn btn-primary">Login
-        </Link>
-      </div>
-      <div className="login mt-1" >
-        <Link to="/" type="submit" class="btn btn-warning">Home
-        </Link>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Signup
+export default Signup;

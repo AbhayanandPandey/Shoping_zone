@@ -1,22 +1,17 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Footer from "./footer.jsx";
+import Navbar from "./navbar.jsx";
+import Main from "../Main/Main.jsx";
+import "./index.css";
 const Index = () => {
   return (
-    <div className="addUser">
-      <h3>Welcome to Shoping_Zone</h3>
-      <div className="login">
-        <p>Already have an account?</p>
-        <Link to="Login" type="submit" class="btn btn-primary">
-          Login
-        </Link>
-      </div>
-      <div className="login">
-        <p>New User?</p>
-        <Link to="/Signup" type="submit" class="btn btn-primary">
-          Signup
-        </Link>
-      </div>
-    </div>
+    <>
+
+    <Navbar />
+    <Main />
+    <Footer />
+
+    </>
   );
 };
 

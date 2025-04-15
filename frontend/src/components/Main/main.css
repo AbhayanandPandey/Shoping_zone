@@ -1,0 +1,25 @@
+.product-row {
+    display: flex;
+    overflow-x: auto;
+    gap: 1.8rem;
+    padding-bottom: 1rem;
+    scrollbar-width: thin;
+    scrollbar-color: #ccc transparent;
+    -ms-overflow-style: none; 
+    scrollbar-width: none;    
+  }
+  
+  .product-row::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .product-row::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+  }
+  
+  .product-card {
+    min-width: 180px;
+    flex: 0 0 auto;
+  }
+  
