@@ -37,7 +37,7 @@ const Signup = () => {
         </Link>
       </div>
       <div className="login mt-1" >
-        <Link to="/" type="submit" class="btn btn-primary">Home
+        <Link to="/" type="submit" class="btn btn-warning">Home
         </Link>
       </div>
     </div>

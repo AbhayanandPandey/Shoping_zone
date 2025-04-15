@@ -22,16 +22,16 @@ const Login = () => {
           placeholder='Enter your Password' 
           autoComplete='off'
           />
-          <button type="button" class="btn btn-success">Login</button>
+          <button type="button" class="btn btn-primary w-100">Login</button>
         </div>
       </form>
       <div className="signup">
         <p>New User?</p>
-        <Link to="/Signup" type="submit" class="btn btn-primary">Signup
+        <Link to="/Signup" type="submit" class="btn btn-success w-50">Signup
         </Link>
       </div>
       <div className="signup  mt-1">
-              <Link to="/" type="submit" class="btn btn-primary">Home
+              <Link to="/" type="submit" class="btn btn-warning">Home
               </Link>
             </div>
     </div>
