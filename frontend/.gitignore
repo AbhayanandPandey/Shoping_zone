@@ -6,10 +6,10 @@
 .pnp.js
 
 #backend 
-../backend/node_modules
-../backend/.pnp
-../backend/.pnp.js
-../backend/.env
+./backend/node_modules
+./backend/.pnp
+./backend/.pnp.js
+./backend/.env
 # testing
 /coverage
 
