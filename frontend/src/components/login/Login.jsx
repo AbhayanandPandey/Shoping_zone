@@ -1,19 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import './signup.css'
-const Signup = () => {
+import './login.css'
+const Login = () => {
   return (
     <div className='addUser'>
-      <h3>Sign Up</h3>
+      <h3>Login</h3>
       <form action="" className='addUserForm'>
         <div className="inputGroup">
-          <label htmlFor="username">Name:</label>
-          <input 
-          type="text" 
-          id='username' 
-          placeholder='Enter your Username' 
-          autoComplete='off'
-          />
+          
           <label htmlFor="useremail">Email:</label>
           <input 
           type="email" 
@@ -28,20 +22,20 @@ const Signup = () => {
           placeholder='Enter your Password' 
           autoComplete='off'
           />
-          <button type="button" class="btn btn-success">SignUp</button>
+          <button type="button" class="btn btn-success">Login</button>
         </div>
       </form>
-      <div className="login">
-        <p>Already have an account?</p>
-        <Link to="/Login" type="submit" class="btn btn-primary">Login
+      <div className="signup">
+        <p>New User?</p>
+        <Link to="/Signup" type="submit" class="btn btn-primary">Signup
         </Link>
       </div>
-      <div className="login mt-1" >
-        <Link to="/" type="submit" class="btn btn-primary">Home
-        </Link>
-      </div>
+      <div className="signup  mt-1">
+              <Link to="/" type="submit" class="btn btn-primary">Home
+              </Link>
+            </div>
     </div>
   )
 }
 
-export default Signup
+export default Login
