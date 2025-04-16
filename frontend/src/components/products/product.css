@@ -1,0 +1,36 @@
+.main-product-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+    box-shadow: none;
+  }
+  
+  .gallery-thumbnails {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    -ms-overflow-style: none; 
+    scrollbar-width: none;   
+  }
+  
+  .thumbnail-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .thumbnail-img:hover,
+  .thumbnail-img:focus {
+    transform: scale(1.05);
+    outline: none;
+  }
+  
+  .thumbnail-img.active-thumb {
+    transform: scale(.9);
+  }
+  

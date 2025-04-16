@@ -1,6 +1,7 @@
 import React from 'react';
 import './main.css'; 
-
+import { Link } from 'react-router-dom';
+import Product from '../products/product';
 const ProductCard = ({ title, desc, price, img }) => (
   <div className="product-card card me-3 shadow-sm">
     <img src={img} className="card-img-top" alt={title} />
@@ -19,7 +20,8 @@ const ProductSection = () => {
 
       {/* Row 1 */}
       <div className="product-row mb-4">
-        <ProductCard title="Apple Watch" desc="Smart wearable device" price="$199.99" img="https://via.placeholder.com/150?text=Watch" />
+        <Link to="/product">
+        <ProductCard title="Apple Watch" desc="Smart wearable device" price="$199.99" img="https://via.placeholder.com/150?text=Watch" /></Link>
         <ProductCard title="Wireless Earbuds" desc="Noise-cancelling audio" price="$49.99" img="https://via.placeholder.com/150?text=Earbuds" />
         <ProductCard title="Gaming Mouse" desc="RGB wired mouse" price="$29.99" img="https://via.placeholder.com/150?text=Mouse" />
         <ProductCard title="Mechanical Keyboard" desc="Backlit keys" price="$89.99" img="https://via.placeholder.com/150?text=Keyboard" />
