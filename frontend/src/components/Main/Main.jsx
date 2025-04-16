@@ -1,7 +1,6 @@
 import React from 'react';
 import './main.css'; 
 import { Link } from 'react-router-dom';
-import Product from '../products/product';
 const ProductCard = ({ title, desc, price, img }) => (
   <div className="product-card card me-3 shadow-sm">
     <img src={img} className="card-img-top" alt={title} />
