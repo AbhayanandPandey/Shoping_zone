@@ -26,7 +26,10 @@ const Signup = () => {
           <button type="submit" className="btn btn-success w-100">Signup</button>
         </form>
         <div className="text-center mt-3">
-          <p>Already a user? <Link to="/login">Login</Link></p>
+          <p className="mb-0">Already a user? <Link to="/login" >Login</Link></p>
+        </div>
+        <div className="text-center">
+            <p> <Link to="/" className="list-inline-item">Home</Link></p>
         </div>
       </div>
     </div>

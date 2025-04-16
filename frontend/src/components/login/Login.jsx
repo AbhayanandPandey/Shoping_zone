@@ -18,7 +18,10 @@ const Login = () => {
           <button type="submit" className="btn btn-primary w-100">Login</button>
         </form>
         <div className="text-center mt-3">
-          <p>New user? <Link to="/signup">Signup</Link></p>
+          <p className="mb-0">New user? <Link to="/signup">Signup</Link></p>
+        </div>
+        <div className="text-center">
+          <p> <Link to="/">Home</Link></p>
         </div>
       </div>
     </div>
