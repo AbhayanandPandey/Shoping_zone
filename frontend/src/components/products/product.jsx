@@ -25,7 +25,6 @@ const ProductCard = ({
     <Navbar />
     <div className="container mt-5">
       <div className="row">
-        {/* Left Section */}
         <div className="col-12 col-lg-6 d-flex flex-column align-items-center mb-4 mb-lg-0 "style={{ borderRight: "1px solid #ccc" }}>
           <div className="w-100 max-w-md p-3 rounded-xl ml-3 shadow-sm" >
             <img
@@ -58,7 +57,6 @@ const ProductCard = ({
           </div>
         </div>
 
-        {/* Right Section */}
         <div className="col-12 col-lg-6">
           <div className="mb-4">
             <h1 className="display-5">{title}</h1>
