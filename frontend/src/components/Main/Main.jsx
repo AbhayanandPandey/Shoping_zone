@@ -17,7 +17,6 @@ const ProductSection = () => {
     <div className="container my-5">
       <h2 className="text-center mb-4">Our Products</h2>
 
-      {/* Row 1 */}
       <div className="product-row mb-4">
         <Link to="/product">
         <ProductCard title="Apple Watch" desc="Smart wearable device" price="$199.99" img="https://via.placeholder.com/150?text=Watch" /></Link>
@@ -32,7 +31,6 @@ const ProductSection = () => {
         <ProductCard title="Fitness Tracker" desc="Health monitoring" price="$79.99" img="https://via.placeholder.com/150?text=Tracker" />
       </div>
 
-      {/* Row 2 */}
       <div className="product-row mb-4">
         <ProductCard title="Drone Camera" desc="4K aerial photography" price="$499.99" img="https://via.placeholder.com/150?text=Drone" />
         <ProductCard title="LED Monitor" desc="24-inch display" price="$149.99" img="https://via.placeholder.com/150?text=Monitor" />
@@ -46,7 +44,6 @@ const ProductSection = () => {
         <ProductCard title="Microphone" desc="Podcast-ready mic" price="$59.99" img="https://via.placeholder.com/150?text=Mic" />
       </div>
 
-      {/* Row 3 */}
       <div className="product-row mb-4">
         <ProductCard title="Camera Lens" desc="Wide angle zoom" price="$249.99" img="https://via.placeholder.com/150?text=Lens" />
         <ProductCard title="Flash Drive" desc="128GB USB 3.0" price="$19.99" img="https://via.placeholder.com/150?text=USB" />
