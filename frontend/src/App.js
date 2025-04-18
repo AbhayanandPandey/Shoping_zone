@@ -2,11 +2,22 @@
   import Index from './components/Home/Index.jsx';
   import ProductCard from './components/products/product.jsx';
   import{ RouterProvider, createBrowserRouter } from 'react-router-dom';
+  import Login from './components/login/Login.jsx';
+  import Signup from './components/Signup/Signup.jsx';
+  import Navbar from './components/Home/navbarlogin.jsx';
   function App() {
     const router = createBrowserRouter([
       {
         path: '/',
         element: <Index />,
+      },
+      {
+        path: '/Login',
+        element: <Login />,
+      },
+      {
+        path: '/Signup',
+        element: <Signup />,
       },
       {
         path: '/product',
