@@ -26,9 +26,9 @@ const ProductCard = ({
             className="col-12 col-lg-6 d-flex flex-column align-items-center mb-4 h-100 mb-lg-0 "
             style={{ borderRight: "1px solid #ccc" }}
           >
-            <div className="w-100 max-w-md p-3 rounded-xl ml-3 shadow-sm h-100 border border-primary">
+            <div className="w-100 max-w-md p-3 rounded-xl ml-3 shadow-sm h-100 ">
               <div
-                className="container d-flex justify-content-center align-items-center"
+                className="container d-flex justify-content-center align-items-center shadow-sm"
                 style={{
                   height: "400px",
                   maxWidth: "100%",
@@ -38,7 +38,7 @@ const ProductCard = ({
                 <img
                   src={mainImage}
                   alt={title}
-                  className="img-fluid rounded-xl main-product-image border border-primary p-3 shadow-sm"
+                  className="img-fluid rounded-xl main-product-image p-3"
                   style={{
                     height: "100%",
                     width: "auto",
