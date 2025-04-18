@@ -3,7 +3,6 @@ import Button from "../ui/button";
 import "./product.css";
 import Navbar from "../Home/navbarlogin";
 import Footer from "../Home/footer";
-
 const ProductCard = ({
   title,
   image,
@@ -19,7 +18,6 @@ const ProductCard = ({
   additionalSpec = "Fast Charging (33W)",
 }) => {
   const [mainImage, setMainImage] = useState(image);
-
   return (
     <>
       <Navbar />
@@ -48,7 +46,6 @@ const ProductCard = ({
                   }}
                 />
               </div>
-
               <div className="gallery-thumbnails mt-4  ">
                 {gallery.slice(0, 10).map((img, i) => (
                   <img
@@ -73,7 +70,6 @@ const ProductCard = ({
               </div>
             </div>
           </div>
-
           <div className="col-12 col-lg-6">
             <div className="mb-4">
               <h1 className="display-5">{title}</h1>
@@ -85,7 +81,6 @@ const ProductCard = ({
                 <span className="text-success ms-2">({discount}% off)</span>
               </p>
             </div>
-
             <div className="mb-4">
               <h2 className="h5">Available Offers</h2>
               <ul className="list-unstyled ms-4">
@@ -96,7 +91,6 @@ const ProductCard = ({
                 ))}
               </ul>
             </div>
-
             <div className="mb-4">
               <h2 className="h5">Delivery</h2>
               <input
@@ -106,7 +100,6 @@ const ProductCard = ({
               />
               <p className="text-muted mt-2">Check if delivery is available</p>
             </div>
-
             <div className="mb-4">
               <h2 className="h5">Ratings & Reviews</h2>
               <div className="d-flex align-items-center">
@@ -116,7 +109,6 @@ const ProductCard = ({
                 <span className="text-muted">({reviewCount} reviews)</span>
               </div>
             </div>
-
             <div className="mb-4">
               <h2 className="h5">Product Specifications</h2>
               <ul className="list-unstyled ms-4">
@@ -125,12 +117,10 @@ const ProductCard = ({
                 ))}
               </ul>
             </div>
-
             <div className="mb-4">
               <h2 className="h5">Additional Specification</h2>
               <p className="ms-4">{additionalSpec}</p>
             </div>
-
             <div className="mb-4">
               <h2 className="h5">Warranty</h2>
               <p className="text-muted">{warranty}</p>
