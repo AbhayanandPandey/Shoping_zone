@@ -29,7 +29,7 @@ Welcome to **Shopping Zone**, a fully responsive and dynamic shopping website bu
 
 You can deploy this React project easily using:
 
-- [GitHub Pages]([https://pages.github.com/](https://github.com/AbhayanandPandey/Shoping_zone))
+- [GitHub Pages](https://github.com/AbhayanandPandey/Shoping_zone)
 
 ---
 
